@@ -209,7 +209,7 @@ nav .links {
 }
 @media (max-width: 500px) {
   nav .links {
-    width: 300px;
+    width: 350px;
   }
 }
 .footer {

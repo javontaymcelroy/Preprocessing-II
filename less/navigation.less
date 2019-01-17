@@ -1,16 +1,22 @@
 nav {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 0px;
     padding: 20px;
     border-bottom: 2px dashed grey;
    
     @media (max-width: 500px){
         flex-direction: column;
+        width: 100%;
+        margin: 0px 0px;
     }
 
     h1 {
         padding-left: 40px;
+        width: 200px;
+        @media(max-width: 500px){
+            margin: 0 auto;
+        }
+       
     }
 
 
@@ -20,12 +26,20 @@ nav {
         font-size: 1.5rem;
         padding-right: 30px;
         padding-top: 10px;
+        
+        @media (max-width: 500px){
+            margin: 0 auto;
+        }
     }
     
     .links {
         display: flex;
         justify-content: flex-end;
 
-        width: 400px;
+        width: 350px;
+
+        @media(max-width:500px) {
+            width: 300px;
+        }
     }
 }

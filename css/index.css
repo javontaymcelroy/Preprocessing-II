@@ -171,14 +171,29 @@ img {
 nav {
   display: flex;
   justify-content: space-evenly;
-  margin: 25px 0;
-  padding: 25px;
+  margin: 20px 0px;
+  padding: 20px;
   border-bottom: 2px dashed grey;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}
+nav h1 {
+  padding-left: 40px;
 }
 nav a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+nav .links {
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
 }
 .footer {
   width: 100%;
@@ -236,12 +251,11 @@ nav a {
 .home .content-pick .btn {
   width: 100%;
   height: 50px;
-  background-color: teal;
+  background-color: #17A2B8;
   border: 1.5px solid #b6b6b6;
   border-radius: 10px;
   color: white;
   font-size: 2rem;
-  padding-top: 5%;
   text-align: center;
 }
 .home .content-pick .destination {

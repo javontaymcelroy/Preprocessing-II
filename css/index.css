@@ -178,7 +178,6 @@ nav {
   nav {
     flex-direction: column;
     width: 100%;
-    margin: 0px 0px;
   }
 }
 nav h1 {
@@ -363,6 +362,6 @@ nav .links {
 }
 @media (max-width: 500px) {
   .container.home {
-    padding: 20px;
+    padding: 0px 20px;
   }
 }

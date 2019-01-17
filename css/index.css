@@ -168,6 +168,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0;
+  padding: 25px;
+  border-bottom: 2px dashed grey;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -221,7 +233,25 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .btn {
+  width: 100%;
+  height: 50px;
+  background-color: teal;
+  border: 1.5px solid #b6b6b6;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  padding-top: 5%;
+  text-align: center;
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .heading h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.home .heading p {
+  border-bottom: 2px dashed grey;
 }

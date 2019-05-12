@@ -5,17 +5,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media(max-width:500px){
+      flex-direction: column;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media(max-width:500px){
+        width: 100%;
+        p {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media(max-width:500px){
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +41,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media(max-width:500px){
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +60,22 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media(max-width:500px){
+      width: 100%;
+    }
+
+    h2 {
+      @media(max-width: 500px){
+        width: 300px;
+      }
+    }
+
+    p {
+      @media(max-width:500px){
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +87,57 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media(max-width:500px){
+      flex-direction: column;
+    }
+
+    .btn {
+      .signup-btn(100%,50px,teal);
+      @media(max-width: 500px){
+        .signup-btn(300px,40px, teal);
+      }
+    }
+
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media(max-width:500px){
+        width: 100%;
+        padding: 0 10%;
+      }
+
+      h4 {
+        @media(max-width:500px) {
+          font-weight: bold;
+        }
+      }
+
+      p {
+        @media(max-width:500px){
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+
     }
   }
+
+  .heading {
+    h2 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    p {
+      border-bottom: 2px dashed grey;
+    }
+
+  }
+
 }// home
+@media(max-width:500px) {
+  .container.home {
+    padding: 0px 20px;
+  }
+}
